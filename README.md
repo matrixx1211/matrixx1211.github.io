@@ -1,0 +1,2 @@
+# HTML_CSS_JS_ITW_PROJEKT2
+Projekt č.2 do ITW na VUT FIT.
