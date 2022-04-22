@@ -1,0 +1,180 @@
+:root {
+	--white: #dfdfdf;
+	--dark-grey: #1A1A1D;
+	--grey: #3b3b3b;
+	--brown-red: #6f2232;
+	--wine: #950740;
+	--red: #C3073F;
+}
+
+/* Obecné nastavení */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Bitter';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+}
+
+/* Rozdělovač */
+.divider {
+	width: 100%;
+	margin: 40px auto;
+	display: none;
+}
+
+.divider hr {
+	width: 80%;
+	margin-right: auto;
+}
+
+/* Hlavička */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--dark-grey);
+	height: 60px;
+	z-index: 100;
+}
+
+.nav {
+	display: grid;
+}
+
+.nav-list {
+	align-self: center;
+	justify-self: start;
+}
+
+.nav-item {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.nav-link {
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+
+	transition: color 0.5s;
+	border-bottom: 2px solid transparent;
+	color: var(--white);
+}
+
+.nav-link:hover {
+	color: var(--red);
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 0.1em;
+	background-color: var(--white);
+	opacity: 0;
+	transition: opacity 0.5s, width 0.5s;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+	opacity: 1;
+	width: 100%;
+}
+
+.nav-brand {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 10px 0;
+}
+
+.nav-brand-img {
+	height: 100%;
+}
+
+/* Hlavní obsah */
+section {
+	height: 100vh;
+	padding-top: 80px;
+}
+
+section::before {
+	content: "";
+	position: absolute;
+	border: 1px solid var(--red);
+	border-radius: 50%;
+	width: 50%;
+	margin: 0 auto;
+	transform: translate(50%, -40px);
+	z-index: -1;
+}
+
+/* Obecné pro všechny sekce */
+.section-header {}
+
+.section-header .container {}
+
+h1.section-heading {
+	font-size: 48px;
+}
+
+.section-heading {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Alfa Slab One';
+	position: relative;
+	text-indent: 20px;
+	color: var(--red);
+}
+
+.section-heading::before {
+	content: '';
+	position: absolute;
+	background-color: var(--dark-grey);
+	width: 4px;
+	height: 100%;
+	bottom: 0;
+	left: 0px;
+}
+
+
+.section-content {}
+
+.section-footer {}
+
+/* Pro jednotlivé sekce */
+/* O mně */
+#about {}
+
+#about .section-header {}
+
+/* Patička */
+footer {}
+
+/* Responzivita */
+@media screen and (min-width: 1200px) {
+
+	.container,
+	.divider {
+		width: 1200px;
+	}
+}
