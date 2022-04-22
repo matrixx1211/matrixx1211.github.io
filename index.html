@@ -5,14 +5,21 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Titulek -->
 	<title>Me, MYSELF & I - Marek Bitomský</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<!-- Fonty -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter&display=swap" rel="stylesheet">
 	<!-- Styly -->
 	<link rel="stylesheet" href="style/style.css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/b507950036.js" crossorigin="anonymous"></script>
 	<!-- Skripty -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="script/scrolling.js"></script>
 </head>
 
@@ -21,13 +28,13 @@
 	<header>
 		<nav class="nav">
 			<div class="container">
-				<a class="nav-brand" href="">
+				<a class="nav-brand" href="https://matrixx1211.github.io">
 					<img class="nav-brand-img" src="img/mmi.png" alt="Brand">
 				</a>
 
 				<ul class="nav-list">
 					<li class="nav-item">
-						<a class="nav-link" href="#about">
+						<a class="nav-link active" href="#about">
 							O mně
 						</a>
 					</li>
@@ -47,6 +54,11 @@
 						</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#last-projects">
+							Projekty
+						</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#contact">
 							Kontakt
 						</a>
@@ -57,56 +69,219 @@
 	</header>
 
 	<!-- Hlavní obsah -->
-	<main class="main-grid">
+	<main>
 		<!-- Vygenerováno pomocí -> section.name-section>(div.container>(div.section-header>h2.section-heading)>(div.section-content>p)>(div.section-footer>p)) -->
-		<section id="about">
-			<div class="section-header">
-				<div class="container">
+		<div class="container">
+			<section id="about">
+				<div class="section-header">
 					<h1 class="section-heading">
 						Marek Bitomský
 					</h1>
 				</div>
-			</div>
-			<div class="section-content">
-				<div class="container">
-					<p>
+				<div class="section-content">
 
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil alias tenetur amet
+						maxime in, facere nemo temporibus, sit incidunt, id quos ipsa eius voluptate ad? Provident
+						nesciunt impedit ipsam.
 					</p>
 				</div>
-			</div>
-		</section>
-
-		<div class="divider">
-			<hr>
+			</section>
 		</div>
 
-		<section id="experience">
-			<div class="section-header">
-				<div class="container">
+		<div class="container">
+			<section id="experience">
+				<div class="section-header">
 					<h2 class="section-heading">
 						Zkušenosti
 					</h2>
 				</div>
-			</div>
-			<div class="section-content">
-				<div class="container">
-
+				<div class="section-content">
 					<p>
 						Nějaký text
 					</p>
 				</div>
-			</div>
-		</section>
-
-		<div class="divider">
-			<hr>
+			</section>
 		</div>
 
+		<div class="container">
+			<section id="education">
+				<div class="section-header">
+					<h2 class="section-heading">
+						Vzdělání
+					</h2>
+				</div>
+				<div class="section-content">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Škola</th>
+								<th colspan="2">Rok</th>
+							</tr>
+							<tr>
+								<th>Typ</th>
+								<th>Název</th>
+								<th>Od</th>
+								<th>Do</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Základní</td>
+								<td>ZŠ a MŠ Brno, Merhautova 37</td>
+								<td>2007</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<td>Střední</td>
+								<td>SŠTĚ Brno, Olomoucká</td>
+								<td>2016</td>
+								<td>2020</td>
+							</tr>
+							<tr>
+								<td>Vysoká</td>
+								<td>VUT FIT</td>
+								<td>2020</td>
+								<td>nyní</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section id="hobby">
+				<div class="section-header">
+					<h2 class="section-heading">
+						Zájmy
+					</h2>
+				</div>
+				<div class="section-content">
+					<p>
+						Nějaký text
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section id="last-projects">
+				<div class="section-header">
+					<h2 class="section-heading">
+						Poslední projekty
+					</h2>
+				</div>
+				<div class="section-content">
+					<div id="pionyr" class="card">
+						<div class="card-image">
+							<img src="img/www.png" alt="Webová stránka">
+						</div>
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>Webová stránka pro Pionýr</h4>
+								<hr>
+							</div>
+							Jedním z mých prvních projektů byla webová stránka pro pražský <a
+								href="https://budidealni.pionyr.cz">Pionyr</a> . Jednalo se o
+							hru, která se hrála na webu a v přírodě... Hráči "pionýři" se zde přihlásili a vstoupili do
+							nějakého týmu, který měl vždy nějakého vedoucího. Následně bylo vypsáno několik úkolů, které
+							hráči spolu s týmem plnili a mohli si vybírat z 7 kategorii <b>paměť, pomoc, poznání,
+								přátelství, pravda, překonání a příroda</b>. Cílem této hry bylo získat co nejvíc bodů,
+							což
+							znamenalo splnit co nejvíc úkolů jen bylo možné z všech 210 možných.
+
+						</div>
+					</div>
+					<div id="iont" class="card">
+						<div class="card-image">
+							<img src="img/charger.png" alt="Nabíječka">
+						</div>
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>Mobilní aplikace, administrace, server pro IONT tech</h4>
+								<hr>
+							</div>
+							Momentálně vytváříme s kamarádem z FITu jeden větší projekt, který se nám naskytl. Jedná se
+							o kompletní servis v podobě <b>mobilní aplikace pro Android a iOS, webovou administraci,
+								server pro komunikaci s nabíječkami a platební bránu</b>. Zadáním úkolů je vytvořit
+							dříve zmíněné aplikace, které budou sloužit pro zobrazení dobíjecích stanic pro
+							elektromobily na mapě, následné načtení QR kódů pro zaplacení částky za dobíjení. Tato
+							aplikace komunikuje se serverem pomocí <b>websocket</b> protokolu pro full-duplexní
+							komunikaci. Server závoreň komunikuje s nabíječkami po celé České republice, zatím jich máme
+							jen pár, které se nacházejí v Písku a ještě na dalších 2 lokacích. Firma <a
+								href="https://iont.tech">IONT tech</a> pro kterou vše
+							tvoříme se zabívá celkovou infrastrukturou dobíjení elektro zařízení (kola, auta,
+							koloběžky).
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section id="contact">
+				<div class="section-header">
+					<h2 class="section-heading">
+						Kontakt
+					</h2>
+				</div>
+				<div class="section-content">
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.779975804714!2d16.5519606!3d49.16678439999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471295e5c9d62067%3A0x30b10e35b3afc240!2zSXJrdXRza8OhIDMyMS84LCA2MjUgMDAgQnJuby1TdGFyw70gTMOtc2tvdmVj!5e0!3m2!1scs!2scz!4v1650669310835!5m2!1scs!2scz"
+							style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="info">
+						<div class="info-group">
+							<h5 class="info-label"><i class="fa fa-map" aria-hidden="true"></i>Adresa:</h5>
+							<p class="info-text">
+								Irkutská 8<br>
+								Brno<br>
+								Česká republika
+							</p>
+						</div>
+						<div class="info-group">
+							<h5 class="info-label"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail:</h5>
+							<p class="info-text">
+								bitomsky.marek121100@gmail.com
+							</p>
+						</div>
+						<div class="info-group">
+							<h5 class="info-label"><i class="fa fa-phone" aria-hidden="true"></i>Telefonní číslo:</h5>
+							<p class="info-text">
+								+420 776 734 525
+							</p>
+						</div>
+						<div class="social-sites">
+							<div class="social-site">
+								<a href="https://www.instagram.com/matrixx1211/">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="social-site">
+								<a href="https://www.facebook.com/matrixx1211/">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="social-site">
+								<a href="https://github.com/matrixx1211">
+									<i class="fa fa-github" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 	</main>
 
 	<!-- Patička -->
 	<footer>
-
+		<div class="container">
+			<p>Tato webová stránka vznikla za účelem projektu do předmětu ITW na VUT FIT.</p>
+		</div>
 	</footer>
 </body>
 

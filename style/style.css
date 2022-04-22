@@ -1,5 +1,5 @@
 :root {
-	--white: #dfdfdf;
+	--white: #ffffff;
 	--dark-grey: #1A1A1D;
 	--grey: #3b3b3b;
 	--brown-red: #6f2232;
@@ -22,7 +22,6 @@ html {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	display: grid;
 }
 
 /* Rozdělovač */
@@ -54,7 +53,7 @@ header {
 
 .nav-list {
 	align-self: center;
-	justify-self: start;
+	justify-self: center;
 }
 
 .nav-item {
@@ -92,6 +91,10 @@ header {
 	transition: opacity 0.5s, width 0.5s;
 }
 
+.active {
+	color: var(--red);
+}
+
 .nav-link:hover::after,
 .nav-link:focus::after {
 	opacity: 1;
@@ -112,25 +115,23 @@ header {
 
 /* Hlavní obsah */
 section {
-	height: 100vh;
 	padding-top: 80px;
+	position: relative;
 }
 
 section::before {
 	content: "";
-	position: absolute;
 	border: 1px solid var(--red);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	border-radius: 50%;
-	width: 50%;
-	margin: 0 auto;
-	transform: translate(50%, -40px);
-	z-index: -1;
+	transform: translateY(40px);
 }
 
 /* Obecné pro všechny sekce */
 .section-header {}
-
-.section-header .container {}
 
 h1.section-heading {
 	font-size: 48px;
@@ -156,19 +157,206 @@ h1.section-heading {
 	left: 0px;
 }
 
-
-.section-content {}
+.section-content {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	padding: 20px;
+	display: grid;
+}
 
 .section-footer {}
 
 /* Pro jednotlivé sekce */
 /* O mně */
-#about {}
 
-#about .section-header {}
+#about .section-content {}
+
+#education table {
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#education thead,
+#education tbody {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#education td,
+#education th {
+	padding: 10px;
+}
+
+#education td {
+	border-bottom: 2px solid var(--dark-grey);
+}
+
+#education thead th {
+	border: 2px solid var(--white);
+	background-color: var(--dark-grey);
+	color: var(--white);
+}
+
+#education tbody tr:hover {
+	background-color: var(--wine);
+	color: var(--white);
+	font-size: 20px;
+}
+
+/* Poslední projekty */
+#last-projects .section-content {
+	gap: 20px;
+}
+
+/* Karty */
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--dark-grey);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.card:hover {
+	border-color: var(--wine);
+}
+
+.card:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.card-text {
+	flex: 3;
+	padding: 20px;
+}
+
+.card-text a {
+	color: var(--red);
+	font-weight: bold;
+}
+
+.card-text a:hover {
+	color: var(--brown-red);
+}
+
+.card-heading {
+	text-align: center;
+	padding: 10px;
+}
+
+.card-heading h4 {
+	font-size: 28px;
+	color: var(--wine);
+}
+
+.card-heading hr {
+	margin: 5px auto;
+	width: 20%;
+}
+
+.card-image {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex: 1;
+	border-right: 1px solid var(--dark-grey);
+}
+
+.card-image img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	transition: width 1s;
+}
+
+.card-image img:hover {
+	width: 100%;
+}
+
+.card:nth-child(even) .card-image {
+	border-right: 0px;
+	border-left: 1px solid var(--dark-grey);
+}
+
+/* Kontakt */
+#contact .section-content {
+	display: flex;
+}
+
+#contact .info,
+#contact .map {
+	flex: 1;
+	height: 600px;
+}
+
+#contact .info {
+	padding: 10px;
+}
+
+#contact .info-group {
+	padding: 10px;
+}
+
+#contact .info-label {
+	font-size: 24px;
+	color: var(--wine);
+}
+
+#contact .info-label i {
+	margin-right: 10px;
+}
+
+#contact .info-text {
+	margin-left: 38px;
+	font-size: 16px;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.social-sites {
+	display: flex;	
+}
+
+.social-site {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social-site a {
+	font-size: 32px;
+	text-decoration: none;
+}
+.social-site a i {
+	background-color: var(--dark-grey);
+	padding: 10px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	color: var(--red);
+}
 
 /* Patička */
-footer {}
+footer {
+	height: 60px;
+	background-color: var(--dark-grey);
+	color: var(--white);
+}
+
+footer .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
 
 /* Responzivita */
 @media screen and (min-width: 1200px) {
