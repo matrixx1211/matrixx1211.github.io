@@ -1,0 +1,1 @@
+import{j as e}from"./index-CT0dAlR4.js";import{H as t,N as o}from"./Navigation.module-cMhrJYbU.js";function s(){return e.jsxs("section",{id:"whoweare",className:"contentContainer",children:[e.jsx(t,{onlyActive:!0}),e.jsx(o,{onlyActive:!0})]})}export{s as default};
