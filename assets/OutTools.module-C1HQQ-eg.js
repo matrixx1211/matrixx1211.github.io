@@ -1,0 +1,1 @@
+import{j as o}from"./index-BqSG1-yq.js";import{H as t,N as e}from"./Navigation.module-CI2igXw2.js";function n(){return o.jsxs("section",{id:"ourtools",className:"contentContainer",children:[o.jsx(t,{onlyActive:!0}),o.jsx(e,{onlyActive:!0})]})}export{n as default};
