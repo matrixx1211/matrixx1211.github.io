@@ -1,0 +1,1 @@
+import{j as t}from"./index-i_PpmdL0.js";import{H as o,N as e}from"./Navigation.module-BvUkgwlj.js";import"./Helpers-B0zxVGTg.js";function i(){return t.jsxs("section",{id:"contact",className:"contentContainer",children:[t.jsx(o,{onlyActive:!0}),t.jsx(e,{onlyActive:!0})]})}export{i as default};

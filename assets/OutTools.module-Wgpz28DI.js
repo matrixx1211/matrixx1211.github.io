@@ -1,0 +1,1 @@
+import{j as o}from"./index-i_PpmdL0.js";import{H as t,N as r}from"./Navigation.module-BvUkgwlj.js";import"./Helpers-B0zxVGTg.js";function n(){return o.jsxs("section",{id:"ourtools",className:"contentContainer",children:[o.jsx(t,{onlyActive:!0}),o.jsx(r,{onlyActive:!0})]})}export{n as default};
