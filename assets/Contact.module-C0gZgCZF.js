@@ -1,0 +1,1 @@
+import{j as t}from"./index-CKM1m-Dz.js";import{H as e,N as o}from"./Navigation.module-CEmHjokl.js";import"./Helpers-LXe585W7.js";import"./motion-Dm6l_ixN.js";function s(){return t.jsxs("section",{id:"contact",className:"contentContainer",children:[t.jsx(e,{onlyActive:!0}),t.jsx(o,{onlyActive:!0,activePage:5})]})}export{s as default};
