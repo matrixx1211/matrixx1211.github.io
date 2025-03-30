@@ -1,1 +1,0 @@
-import{j as o}from"./index-CVFG_pDq.js";import{H as t,N as e}from"./Navigation.module-CyIZ0Edc.js";function n(){return o.jsxs("section",{id:"ourtools",className:"contentContainer",children:[o.jsx(t,{onlyActive:!0}),o.jsx(e,{onlyActive:!0})]})}export{n as default};

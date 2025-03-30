@@ -1,1 +1,0 @@
-import{j as a}from"./index-DZIjgnO9.js";import{m as o}from"./motion-BF3MoFrH.js";function t({number:s,anim:r,style:e}){return a.jsx(o.div,{className:e.pageIndicator,...r?r.pageIndicator:{},children:a.jsx(o.span,{className:e.pageNumber,...r?r.pageNumber:{},children:s})})}export{t as P};

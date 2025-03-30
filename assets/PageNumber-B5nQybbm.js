@@ -1,1 +1,0 @@
-import{j as a,m as s}from"./index-i_PpmdL0.js";function t({number:o,anim:e,style:r}){return a.jsx(s.div,{className:r.pageIndicator,...e?e.pageIndicator:{},children:a.jsx(s.span,{className:r.pageNumber,...e?e.pageNumber:{},children:o})})}export{t as P};

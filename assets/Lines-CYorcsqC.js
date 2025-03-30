@@ -1,1 +1,0 @@
-import{j as n}from"./index-CKM1m-Dz.js";import{m}from"./motion-Dm6l_ixN.js";function l({anim:s,lines:t,style:r,className:x="linesText"}){function o({text:i,index:e}){return n.jsx("div",{children:n.jsx(m.span,{...s?s.line(e):{},className:r.lineText,children:i})})}return n.jsx("div",{className:r[x],children:t.map((i,e)=>n.jsx(o,{text:i,index:e},e))})}export{l as L};
